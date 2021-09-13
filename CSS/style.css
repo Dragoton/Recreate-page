@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #eaeaea;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.logInButton {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  background-color: #cc1f0c;
+  color: white;
+}
+.signUpButton {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background-color: #eaeaea;
+}
+
+header input {
+  border-radius: 40px;
+  background-color: #eaeaea;
+  border: 0;
+  width: 24rem;
+}
+h1 {
+  padding-right: 14rem;
+}
+.bigMealNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+nav img {
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.foodType {
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #757575;
+  margin-top: 1rem;
+}
