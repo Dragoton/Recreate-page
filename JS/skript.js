@@ -6,7 +6,7 @@ const options = {
   },
 };
 
-//fetch
+//fetch de data
 fetch(url, options)
   .then((response) => {
     if (!response.ok) {
@@ -18,17 +18,26 @@ fetch(url, options)
     handleData(data);
   })
   .catch((e) => {
-    console.error("Evo problem:", e.message);
+    console.error("An error occured:", e.message);
   });
 
-function handleData(foods) {
-  foods.forEach((food) => {
-    console.log(food);
+//clone the template that we have for the 6 bands
+
+function handleData(bands) {
+  //here I grab each on of the elements from the array
+  bands.forEach((band) => {
+    //here I console log it to make sure everything is okay
+    console.log(band);
+    //here I take the template that I already have
     const template = document.querySelector("template").content;
+    //here I clone it
     const clone = template.cloneNode(true);
-    clone.querySelector("h2").textContent = food.name;
-    clone.querySelector("img").src = food.image;
+    //here I add all the data from database to the existing tags from the template
+    clone.querySelector("h2").textContent = band.name;
+    clone.querySelector("img").src = band.image;
+    //here I place all my clones in the main
     const mainEl = document.querySelector("main");
+    //here I show the clones on main
     mainEl.appendChild(clone);
   });
 }

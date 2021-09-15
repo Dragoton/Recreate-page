@@ -143,3 +143,47 @@ p {
 .downText p {
   color: #757575;
 }
+
+/*main*/
+
+main {
+  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-top: 2rem;
+}
+
+.templates {
+  position: relative;
+  margin-bottom: 3rem;
+  margin-right: 0rem;
+}
+
+.place_for_template img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  display: block;
+  margin-left: 1rem;
+}
+
+.templates {
+  transition: all 0.2s ease-in-out;
+}
+
+.templates:hover {
+  transform: scale(1.1);
+}
+
+article h2 {
+  position: absolute;
+  left: 20%;
+  top: 70%;
+}
+
+article h2 {
+  font-size: 1rem;
+  font-family: Iron;
+  color: black;
+}
